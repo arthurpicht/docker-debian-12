@@ -20,7 +20,8 @@ RUN set -eux; \
 	echo "alias ls='ls --color=auto'" >> /root/.bashrc; \
 	echo "alias ll='ls -alF'" >> /root/.bashrc; \
 	echo "alias la='ls -A'" >> /root/.bashrc; \
-	echo "alias l='ls -CF'" >> /root/.bashrc;
+	echo "alias l='ls -CF'" >> /root/.bashrc; \
+	echo "[$(date)]  [$DOCKER_NAME]" >> /.components;
 
 # see also: 
 # https://github.com/docker-library/buildpack-deps/blob/1845b3f918f69b4c97912b0d4d68a5658458e84f/stretch/scm/Dockerfile
