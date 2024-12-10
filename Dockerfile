@@ -1,7 +1,7 @@
 FROM debian:12
 
 ENV DOCKER_NAME="debian-12"
-ENV LANG C.UTF-8
+ENV LANG=C.UTF-8
 
 RUN set -eux; \
 	export DEBIAN_FRONTEND=noninteractive; \
